@@ -1,0 +1,53 @@
+.product-page, .cart-page, .shop-page {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.product-left-column, .cart-left-column, .product-right-column, .cart-right-column {
+    flex: 1;
+    margin: 10px;
+}
+
+.product-left-column {
+    max-width: 60%;
+}
+
+.product-right-column {
+    max-width: 40%;
+}
+
+.product-gallery .gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-gallery .gallery-thumbnail {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.product-page .add-to-cart-button,
+.cart-page .checkout-button,
+.shop-page .add-to-cart-button,
+.shop-page .add-to-wishlist-button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.product-page .add-to-cart-button:hover,
+.cart-page .checkout-button:hover,
+.shop-page .add-to-cart-button:hover,
+.shop-page .add-to-wishlist-button:hover {
+    background-color: darkgreen;
+}
+.product-thumbnail {
+    width: 100px; /* Dimensiune mai potrivită */
+    height: auto; /* Păstrează proporțiile */
+    object-fit: cover; /* Ajustează dacă este nevoie */
+    margin: 0 auto; /* Centrare opțională */
+    display: block; /* Asigură afișarea corectă */
+}
